@@ -1,0 +1,181 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendi Kadzat Leusmana</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Chris John Agarap's web portfolio" />
+    <meta name="keywords" content="agarap, resume, cv, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="{% static 'assets/images/mylogoes.png' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Google Font-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'assets/icons/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap.min.css' %}">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/animate.css' %}">
+    <!-- Owl Carousel CSS-->
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/owl.css' %}">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="{% static 'assets/plugins/css/jquery.fancybox.min.css' %}">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <!-- Colors -->
+    <link rel="stylesheet" href="{% static 'assets/css/colors/blue-munsell.css' %}" title="blue-munsell">
+
+    <style>
+        h2, h3, h4, li, p {
+            color: #100e17;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Loader -->
+    <div class="section-loader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- End Loader -->
+
+    <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header" style="background-color: rgba(255, 255, 255, 0.8)">
+{#        <div class="overlay"></div>#}
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light mh-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#mh-home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-experience">Experiences</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-portfolio">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-certification">Certifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mh-location">Location</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- back to top button -->
+    <button onclick="topFunction()" id="myBtn" class="SmoothmyTop" title="Go to top"><img style="width: 60%;" src="{% static 'assets/images/arrow-up.svg' %}" alt=""></button>
+    <!-- css -->
+    <style>
+        #myBtn {
+        display: none;
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px;
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: rgba(133, 133, 133, 0.87); 
+        color: white; 
+        cursor: pointer;
+        padding : none;
+        border-radius: 100px;
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        /* border: 4px solid green; */
+        margin: 10px; 
+        }
+
+        #myBtn:hover {
+        background-color: lightblue;
+        }
+
+    </style>
+    <!-- js -->
+    <script type="text/javascript">
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        $(document).ready(function(){ 
+            $('.SmoothmyTop').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        }); 
+        return false
+        }
+    </script>
+
+    <footer style="font-family: Verdana;" class="mh-footer mh-footer-3" id="mh-contact">
+        <center>© 2021 Rendi Kadzat Leusmana | All Rights Reserved.</p></center>
+    </footer>
+    
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/plugins/js/jquery.min.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/plugins/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/plugins/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/plugins/js/owl.carousel.js' %}"></script>
+    <!-- validator -->
+    <script src="{% static 'assets/plugins/js/validator.min.js' %}"></script>
+    <!-- wow -->
+    <script src="{% static 'assets/plugins/js/wow.min.js' %}"></script>
+    <!-- mixin js-->
+    <script src="{% static 'assets/plugins/js/jquery.mixitup.min.js' %}"></script>
+    <!-- circle progress-->
+    <script src="{% static 'assets/plugins/js/circle-progress.js' %}"></script>
+    <!-- jquery nav -->
+    <script src="{% static 'assets/plugins/js/jquery.nav.js' %}"></script>
+    <!-- Fancybox js-->
+    <script src="{% static 'assets/plugins/js/jquery.fancybox.min.js' %}"></script>
+    <!-- Map api -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+    <!-- isotope js-->
+    <script src="{% static 'assets/plugins/js/isotope.pkgd.js' %}"></script>
+    <script src="{% static 'assets/plugins/js/packery-mode.pkgd.js' %}"></script>
+    <!-- Custom Scripts-->
+    <script src="{% static 'assets/js/map-init.js' %}"></script>
+    <script src="{% static 'assets/js/custom-scripts.js' %}"></script>
+</body>
+</html>
