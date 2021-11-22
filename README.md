@@ -1,8 +1,8 @@
 # Personal Web Portfolio
-![Homepage](https://raw.githubusercontent.com/seeej/web-portfolio/master/static/assets/images/PortfolioHomePage.png)
+![Homepage](https://github.com/kadzat/myportfolio/blob/master/static/assets/images/rendi-profile.png)
 
 ## Built with
-* [Django 2.2.2](https://www.djangoproject.com/)
+* [Django==3.2.9](https://www.djangoproject.com/)
 * JavaScript
 * [Python 3.6.8](https://www.python.org/)
 * SQLite
