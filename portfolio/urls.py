@@ -14,4 +14,9 @@ urlpatterns = [
          views.project_document, name='project_document'),
     path('resume/<int:pk>/', views.resume, name='resume'),
     path('seminar/<int:pk>/', views.seminar, name='seminar')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
